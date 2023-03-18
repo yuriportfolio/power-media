@@ -1,3 +1,5 @@
+import PageContainer from '../../components/layout/PageContainer'
+import PageHeader from '../../components/layout/PageHeader'
 import AppCard from './components/AppCard'
 import { apps } from './data'
 import * as S from './styles'
@@ -5,20 +7,18 @@ import * as S from './styles'
 function HomePage() {
     return (
         <>
-            <S.Wrapper>
-                <S.Container>
-                    <S.Header>
-                        <h1 className="title">Boost to your digital content</h1>
-                        <p className="description">Choose one of our apps to get started</p>
-                    </S.Header>
+            <PageContainer>
+                <PageHeader
+                    title='Boost to your digital content'
+                    description='Choose one of our apps to get started'
+                />
 
-                    <S.AppList>
-                        {apps.map((app, key) => (
-                            <AppCard key={key} app={app} />
-                        ))}
-                    </S.AppList>
-                </S.Container>
-            </S.Wrapper>
+                <S.AppList>
+                    {apps.map((app, key) => (
+                        <AppCard key={key} app={app} />
+                    ))}
+                </S.AppList>
+            </PageContainer>
         </>
     )
 }

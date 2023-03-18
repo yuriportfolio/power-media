@@ -2,12 +2,14 @@ import { FormEvent, useRef, useState } from 'react'
 import axios from 'axios'
 import toast from 'react-hot-toast'
 
-import CopyCard from './components/CopyCard'
+import CopyCard from '../../components/datadisplay/CopyCard'
 import * as S from './styles'
 import DotLoading from '../../components/feedback/DotLoading'
 import BackButton from '../../components/inputs/BackButton'
 import TextInput from '../../components/inputs/TextInput'
 import Button from '../../components/inputs/Button'
+import PageContainer from '../../components/layout/PageContainer'
+import PageHeader from '../../components/layout/PageHeader'
 
 const CHATGPT_KEY = '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'
 
@@ -66,41 +68,39 @@ function HashtagsPage() {
 
     return (
         <>
-            <S.Wrapper>
-                <S.Container>
-                    <BackButton href='/' />
+            <PageContainer>
+                <BackButton href='/' />
 
-                    <S.Header>
-                        <h1 className="title">Let’s find your Power Hashtags!</h1>
-                        <p className="description">Transform your texts into powerful hashtags with PowerHashtags - the ideal tool to increase your visibility and engagement on social media!</p>
-                    </S.Header>
+                <PageHeader
+                    title='Let’s find your Power Hashtags!'
+                    description='Transform your texts into powerful hashtags with PowerHashtags - the ideal tool to increase your visibility and engagement on social media!'
+                />
 
-                    <S.FormGroup onSubmit={handleFetchHashTags} >
-                        <TextInput
-                            ref={inputDescriptionRef}
-                            className='text-input'
-                            type="text"
-                            placeholder='Paste your text here'
-                        />
+                <S.FormGroup onSubmit={handleFetchHashTags} >
+                    <TextInput
+                        ref={inputDescriptionRef}
+                        className='text-input'
+                        type="text"
+                        placeholder='Paste your text here'
+                    />
 
-                        <Button disabled={isLoading} type='submit' className="btn-submit">
-                            {isLoading ? <DotLoading /> : 'GENERATE'}
-                        </Button>
-                    </S.FormGroup>
+                    <Button disabled={isLoading} type='submit' className="btn-submit">
+                        {isLoading ? <DotLoading /> : 'GENERATE'}
+                    </Button>
+                </S.FormGroup>
 
-                    <S.List>
-                        {hashtags.splitted.length > 0 && (
-                            <>
-                                <CopyCard text={hashtags.text} isMultiple />
+                <S.List>
+                    {hashtags.splitted.length > 0 && (
+                        <>
+                            <CopyCard text={hashtags.text} isMultiple />
 
-                                <S.Separator />
-                            </>
-                        )}
+                            <S.Separator />
+                        </>
+                    )}
 
-                        {hashtags.splitted.map((tag, key) => <CopyCard key={key} text={tag} />)}
-                    </S.List>
-                </S.Container>
-            </S.Wrapper>
+                    {hashtags.splitted.map((tag, key) => <CopyCard key={key} text={tag} />)}
+                </S.List>
+            </PageContainer>
         </>
     )
 }

@@ -11,7 +11,7 @@ export const Container = styled.div`
 
     :hover {
         transform: translateY(-2px);
-        border: 2px solid #444;
+        border: 2px solid #d1fe49;
     }
 
     .icon {
