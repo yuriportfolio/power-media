@@ -6,6 +6,8 @@ import CopyCard from './components/CopyCard'
 import * as S from './styles'
 import DotLoading from '../../components/feedback/DotLoading'
 import BackButton from '../../components/inputs/BackButton'
+import TextInput from '../../components/inputs/TextInput'
+import Button from '../../components/inputs/Button'
 
 const CHATGPT_KEY = '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'
 
@@ -74,11 +76,16 @@ function HashtagsPage() {
                     </S.Header>
 
                     <S.FormGroup onSubmit={handleFetchHashTags} >
-                        <input ref={inputDescriptionRef} className='text-input' type="text" placeholder='Paste your text here' />
+                        <TextInput
+                            ref={inputDescriptionRef}
+                            className='text-input'
+                            type="text"
+                            placeholder='Paste your text here'
+                        />
 
-                        <button disabled={isLoading} type='submit' className="btn-submit">
+                        <Button disabled={isLoading} type='submit' className="btn-submit">
                             {isLoading ? <DotLoading /> : 'GENERATE'}
-                        </button>
+                        </Button>
                     </S.FormGroup>
 
                     <S.List>
