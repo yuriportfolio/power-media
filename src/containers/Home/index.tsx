@@ -1,4 +1,4 @@
-import AppCard from '../../components/AppCard'
+import AppCard from './components/AppCard'
 import { apps } from './data'
 import * as S from './styles'
 

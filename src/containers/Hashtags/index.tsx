@@ -2,10 +2,10 @@ import { FormEvent, useRef, useState } from 'react'
 import axios from 'axios'
 import toast from 'react-hot-toast'
 
-import CopyCard from '../../components/CopyCard'
+import CopyCard from './components/CopyCard'
 import * as S from './styles'
-import DotLoading from '../../components/DotLoading'
-import BackButton from '../../components/BackButton'
+import DotLoading from '../../components/feedback/DotLoading'
+import BackButton from '../../components/inputs/BackButton'
 
 const CHATGPT_KEY = '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'
 
