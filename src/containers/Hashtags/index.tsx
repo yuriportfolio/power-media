@@ -5,6 +5,7 @@ import toast from 'react-hot-toast'
 import CopyCard from '../../components/CopyCard'
 import * as S from './styles'
 import DotLoading from '../../components/DotLoading'
+import BackButton from '../../components/BackButton'
 
 const CHATGPT_KEY = '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'
 
@@ -65,6 +66,8 @@ function HashtagsPage() {
         <>
             <S.Wrapper>
                 <S.Container>
+                    <BackButton href='/' />
+
                     <S.Header>
                         <h1 className="title">Let’s find your Power Hashtags!</h1>
                         <p className="description">Transform your texts into powerful hashtags with PowerHashtags - the ideal tool to increase your visibility and engagement on social media!</p>

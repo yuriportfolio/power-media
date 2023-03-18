@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     background-color: #1a1a1a;
+    border: 2px solid #1a1a1a;
     border-radius: 8px;
     padding: 20px;
 
@@ -10,6 +11,7 @@ export const Container = styled.div`
 
     :hover {
         transform: translateY(-2px);
+        border: 2px solid #444;
     }
 
     .icon {

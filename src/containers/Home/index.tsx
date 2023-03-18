@@ -8,7 +8,7 @@ function HomePage() {
             <S.Wrapper>
                 <S.Container>
                     <S.Header>
-                        <h1 className="title">Give a boost to your digital content</h1>
+                        <h1 className="title">Boost to your digital content</h1>
                         <p className="description">Choose one of our apps to get started</p>
                     </S.Header>
 

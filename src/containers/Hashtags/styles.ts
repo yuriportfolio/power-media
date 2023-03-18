@@ -11,6 +11,8 @@ export const Container = styled.div`
 `
 
 export const Header = styled.div`
+    margin-top: 20px;
+
     .title {
         font-size: 32px;
         color: #eee;
