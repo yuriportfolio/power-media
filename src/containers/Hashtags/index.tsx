@@ -1,5 +1,4 @@
 import { FormEvent, useRef, useState } from 'react'
-import axios from 'axios'
 import toast from 'react-hot-toast'
 
 import CopyCard from '../../components/datadisplay/CopyCard'
@@ -10,8 +9,9 @@ import TextInput from '../../components/inputs/TextInput'
 import Button from '../../components/inputs/Button'
 import PageContainer from '../../components/layout/PageContainer'
 import PageHeader from '../../components/layout/PageHeader'
+import { postSendMessageToChatGPT } from '../../services/chatgpt'
+import hashtagsPrompt from '../../prompts/hashtags-prompt'
 
-const CHATGPT_KEY = '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'
 
 function HashtagsPage() {
     const inputDescriptionRef = useRef<HTMLInputElement>(null)
@@ -26,24 +26,9 @@ function HashtagsPage() {
         event.preventDefault()
         setIsLoading(true)
 
-        const prompt = `
-          Generate 5 hashtags in Portuguese for a post about ${inputDescriptionRef.current.value}.
-          Return each item separated by a comma, in lowercase, and without a line break.
-        `;
-
         try {
-            const { data } = await axios.post('https://api.openai.com/v1/engines/text-davinci-003-playground/completions', {
-                prompt: prompt,
-                temperature: 0.22,
-                max_tokens: 500,
-                top_p: 1,
-                frequency_penalty: 0,
-                presence_penalty: 0,
-            }, {
-                headers: {
-                    "Content-Type": "application/json",
-                    Authorization: `Bearer ${CHATGPT_KEY}`
-                },
+            const { data } = await postSendMessageToChatGPT({
+                prompt: hashtagsPrompt(inputDescriptionRef.current.value)
             })
 
             formatHashtags(data.choices[0].text)

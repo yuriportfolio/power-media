@@ -20,7 +20,7 @@ export const apps = [
     {
         title: 'Emoji Suggest',
         description: 'assaddsd',
-        url: '/hashtags',
+        url: '/emojis',
         icon: '😀',
     },
     {
