@@ -9,9 +9,9 @@ export const apps = [
     {
         title: 'Slogan',
         description: 'assaddsd',
-        url: '/business-name',
+        url: '/slogan',
         icon: '📣',
-        isActive: false
+        isActive: true
     },
     {
         title: 'Hashtags',

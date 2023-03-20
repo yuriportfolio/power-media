@@ -21,7 +21,7 @@ export const Container = styled.div<ContainerProps>`
     ${({ isActive }) => !isActive && css`
         filter: grayscale(100%);
         cursor: not-allowed;
-        opacity: 0.5;
+        opacity: 0.3;
 
         :hover {
             transform: none;
