@@ -45,7 +45,14 @@ export const apps = [
         title: 'Business Name',
         description: 'assaddsd',
         url: '/business-name',
-        icon: ' 📈',
+        icon: '📈',
+        isActive: false
+    },
+    {
+        title: 'Slogan',
+        description: 'assaddsd',
+        url: '/business-name',
+        icon: '📣',
         isActive: false
     }
 ]
