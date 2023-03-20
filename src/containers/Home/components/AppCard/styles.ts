@@ -1,6 +1,10 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
-export const Container = styled.div`
+type ContainerProps = {
+    isActive: boolean
+}
+
+export const Container = styled.div<ContainerProps>`
     background-color: #1a1a1a;
     border: 2px solid #1a1a1a;
     border-radius: 8px;
@@ -13,6 +17,17 @@ export const Container = styled.div`
         transform: translateY(-2px);
         border: 2px solid #d1fe49;
     }
+
+    ${({ isActive }) => !isActive && css`
+        filter: grayscale(100%);
+        cursor: not-allowed;
+        opacity: 0.5;
+
+        :hover {
+            transform: none;
+            border: 2px solid #1a1a1a;
+        }
+    `}
 
     .icon {
         font-size: 24px;

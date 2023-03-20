@@ -1,45 +1,51 @@
 export const apps = [
     {
-        title: 'Hashtags Generator',
+        title: 'Hashtags',
         description: 'assaddsd',
         url: '/hashtags',
         icon: '#️⃣',
+        isActive: true
     },
     {
         title: 'Post Ideas',
         description: 'assaddsd',
         url: '/hashtags',
         icon: '💡',
+        isActive: false
     },
     {
-        title: 'Text Generator',
+        title: 'Content',
         description: 'assaddsd',
         url: '/hashtags',
         icon: '📝',
+        isActive: false
     },
     {
-        title: 'Emoji Suggest',
+        title: 'Emojis',
         description: 'assaddsd',
         url: '/emojis',
         icon: '😀',
+        isActive: true
     },
     {
-        title: 'Keywords Generator',
+        title: 'Keywords',
         description: 'assaddsd',
         url: '/hashtags',
         icon: '🆒',
+        isActive: false
     },
     {
-        title: 'Speech to Improved Text',
+        title: 'Speech to Text',
         description: 'assaddsd',
         url: '/hashtags',
         icon: '💬',
+        isActive: false
+    },
+    {
+        title: 'Business Name',
+        description: 'assaddsd',
+        url: '/business-name',
+        icon: ' 📈',
+        isActive: false
     }
-    
-    // {
-    //     title: '',
-    //     description: '',
-    //     url: '',
-    //     icon: '',
-    // }
 ]

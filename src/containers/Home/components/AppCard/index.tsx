@@ -7,14 +7,15 @@ type AppCardProps = {
         description: string
         url: string
         icon: string
+        isActive: boolean
     },
 }
 
 function AppCard({ app }: AppCardProps) {
     return (
         <>
-            <Link href={app.url} >
-                <S.Container >
+            <Link href={app.isActive ? app.url : '/'} >
+                <S.Container isActive={app.isActive} >
                     <p className="icon">{app.icon}</p>
 
                     <div className="info">
