@@ -1,5 +1,19 @@
 export const apps = [
     {
+        title: 'Company Name',
+        description: 'assaddsd',
+        url: '/company-name',
+        icon: '📈',
+        isActive: true
+    },
+    {
+        title: 'Slogan',
+        description: 'assaddsd',
+        url: '/business-name',
+        icon: '📣',
+        isActive: false
+    },
+    {
         title: 'Hashtags',
         description: 'assaddsd',
         url: '/hashtags',
@@ -41,18 +55,4 @@ export const apps = [
         icon: '💬',
         isActive: false
     },
-    {
-        title: 'Business Name',
-        description: 'assaddsd',
-        url: '/business-name',
-        icon: '📈',
-        isActive: false
-    },
-    {
-        title: 'Slogan',
-        description: 'assaddsd',
-        url: '/business-name',
-        icon: '📣',
-        isActive: false
-    }
 ]
