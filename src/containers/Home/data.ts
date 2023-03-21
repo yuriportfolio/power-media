@@ -23,9 +23,9 @@ export const apps = [
     {
         title: 'Post Ideas',
         description: 'assaddsd',
-        url: '/hashtags',
+        url: '/post-ideas',
         icon: '💡',
-        isActive: false
+        isActive: true
     },
     {
         title: 'Content',
