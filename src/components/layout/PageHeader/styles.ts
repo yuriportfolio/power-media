@@ -10,6 +10,7 @@ export const Container = styled.div`
     }
 
     .description {
+        margin-top: 6px;
         font-size: 16px;
         color: #bbb;
     }

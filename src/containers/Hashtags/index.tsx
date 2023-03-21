@@ -57,8 +57,8 @@ function HashtagsPage() {
                 <BackButton href='/' />
 
                 <PageHeader
-                    title='Let’s find your Power Hashtags!'
-                    description='Transform your texts into powerful hashtags with PowerHashtags - the ideal tool to increase your visibility and engagement on social media!'
+                    title='Hashtags #️⃣'
+                    description='Take your social media game to the next level with our powerful hashtag generator.'
                 />
 
                 <S.FormGroup onSubmit={handleFetchHashTags} >
@@ -66,7 +66,7 @@ function HashtagsPage() {
                         ref={inputDescriptionRef}
                         className='text-input'
                         type="text"
-                        placeholder='Paste your text here'
+                        placeholder='Enter the text'
                     />
 
                     <Button disabled={isLoading} type='submit' className="btn-submit">

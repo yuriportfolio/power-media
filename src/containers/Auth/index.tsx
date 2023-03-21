@@ -36,18 +36,18 @@ function AuthPage() {
         <>
             <PageContainer>
                 <PageHeader
-                    title='Set your Open AI token'
-                    description='For use this app, insert the Open AI Token:'
+                    title='OpenAI API Token'
+                    description='To use this app, enter your token below.'
                 />
 
                 <S.FormGroup onSubmit={handleAuth} >
-                    <TextInput ref={inputTokenRef} placeholder='Type your token' />
+                    <TextInput ref={inputTokenRef} placeholder='Paste your token' />
                     <Button disabled={isLoading} type='submit' className="btn-submit">
                         {isLoading ? <DotLoading /> : 'CONTINUE'}
                     </Button>
                 </S.FormGroup>
 
-                <p style={{ color: '#eee' }} >You dont have a token? Pick up here:</p>
+                <p style={{ color: '#eee' }} >Don't have a token? Get here:</p>
                 <a style={{ color: '#d1fe497e', textDecoration: 'underline' }} href="https://platform.openai.com/account/api-keys" target="_blank" >https://platform.openai.com/account/api-keys</a>
             </PageContainer>
         </>

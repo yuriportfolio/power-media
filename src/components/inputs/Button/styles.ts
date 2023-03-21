@@ -5,9 +5,10 @@ export const Container = styled.button`
     height: 50px;
     padding: 10px 20px;
     border-radius: 8px;
-    font-weight: bold;
-    color: #222;
     width: 100%;
+    font-weight: bold;
+    font-size: 14px;
+    color: #222;
 
     display: flex;
     justify-content: center;

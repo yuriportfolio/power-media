@@ -42,12 +42,12 @@ function PostIdeas() {
                 <BackButton href='/' />
 
                 <PageHeader
-                    title='Post Ideas'
-                    description='Content ideas for your page'
+                    title='Post Ideas 💡'
+                    description='Never run out of engaging content ideas with our dynamic post idea generator.'
                 />
 
                 <S.FormGroup onSubmit={handleFetchEmojis} >
-                    <TextInput ref={inputDescriptionRef} placeholder='Type something' />
+                    <TextInput ref={inputDescriptionRef} placeholder='Type the theme' />
                     <Button disabled={isLoading} type='submit' className="btn-submit">
                         {isLoading ? <DotLoading /> : 'SEARCH'}
                     </Button>

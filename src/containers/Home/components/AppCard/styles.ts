@@ -4,11 +4,12 @@ type ContainerProps = {
     isActive: boolean
 }
 
-export const Container = styled.div<ContainerProps>`
+export const Container = styled.li<ContainerProps>`
     background-color: #1a1a1a;
     border: 2px solid #1a1a1a;
     border-radius: 8px;
     padding: 20px;
+    height: 100%;
 
     cursor: pointer;
     transition: all 400ms;

@@ -42,12 +42,12 @@ function ContentPage() {
                 <BackButton href='/' />
 
                 <PageHeader
-                    title='Content'
-                    description='Post content creation'
+                    title='Content 📝'
+                    description='Effortlessly create high-quality text content for your posts with our cutting-edge content generator.'
                 />
 
                 <S.FormGroup onSubmit={handleFetchContent} >
-                    <TextInput ref={inputDescriptionRef} placeholder='Type something' />
+                    <TextInput ref={inputDescriptionRef} placeholder='Describe the theme of the text you want' />
                     <Button disabled={isLoading} type='submit' className="btn-submit">
                         {isLoading ? <DotLoading /> : 'SEARCH'}
                     </Button>

@@ -42,12 +42,12 @@ function SloganPage() {
                 <BackButton href='/' />
 
                 <PageHeader
-                    title='Slogan'
-                    description='Find the best slogan for the your company'
+                    title='Slogan 📣'
+                    description='Craft compelling and catchy slogans with ease using our innovative tool.'
                 />
 
                 <S.FormGroup onSubmit={handleFetchSlogan} >
-                    <TextInput ref={inputDescriptionRef} placeholder='Describe what your company do' />
+                    <TextInput ref={inputDescriptionRef} placeholder='Describe what your company does' />
                     <Button disabled={isLoading} type='submit' className="btn-submit">
                         {isLoading ? <DotLoading /> : 'SEARCH'}
                     </Button>

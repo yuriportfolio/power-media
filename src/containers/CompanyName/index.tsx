@@ -42,12 +42,12 @@ function CompanyNamePage() {
                 <BackButton href='/' />
 
                 <PageHeader
-                    title='Company Name'
-                    description='Find the best name for the your company'
+                    title='Company Name 📈'
+                    description='A powerful tool to create memorable business names.'
                 />
 
                 <S.FormGroup onSubmit={handleFetchEmojis} >
-                    <TextInput ref={inputDescriptionRef} placeholder='Describe what your company do' />
+                    <TextInput ref={inputDescriptionRef} placeholder='Describe what your company does' />
                     <Button disabled={isLoading} type='submit' className="btn-submit">
                         {isLoading ? <DotLoading /> : 'SEARCH'}
                     </Button>

@@ -53,8 +53,8 @@ function KeywordsPage() {
                 <BackButton href='/' />
 
                 <PageHeader
-                    title='Keywords'
-                    description='Powerful keywords'
+                    title='Keywords 🆒'
+                    description='Maximize your search engine optimization potential with our effective keyword generator.'
                 />
 
                 <S.FormGroup onSubmit={handleFetchKeywords} >
@@ -62,7 +62,7 @@ function KeywordsPage() {
                         ref={inputDescriptionRef}
                         className='text-input'
                         type="text"
-                        placeholder='Paste your text here'
+                        placeholder='Enter the text'
                     />
 
                     <Button disabled={isLoading} type='submit' className="btn-submit">

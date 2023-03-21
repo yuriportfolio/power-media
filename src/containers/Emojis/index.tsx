@@ -42,8 +42,8 @@ function EmojisPage() {
                 <BackButton href='/' />
 
                 <PageHeader
-                    title='Emojis'
-                    description='Find emoji by text'
+                    title='Emojis 😀'
+                    description='Elevate your messaging game with our intuitive app that suggests emojis to perfectly capture the tone of your text.'
                 />
 
                 <S.FormGroup onSubmit={handleFetchEmojis} >
