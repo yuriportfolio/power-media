@@ -18,7 +18,7 @@ function SloganPage() {
     const [isLoading, setIsLoading] = useState(false)
     const [slogans, setSlogans] = useState([])
 
-    async function handleFetchEmojis(event: FormEvent<HTMLFormElement>) {
+    async function handleFetchSlogan(event: FormEvent<HTMLFormElement>) {
         event.preventDefault()
         setIsLoading(true)
 
@@ -46,7 +46,7 @@ function SloganPage() {
                     description='Find the best slogan for the your company'
                 />
 
-                <S.FormGroup onSubmit={handleFetchEmojis} >
+                <S.FormGroup onSubmit={handleFetchSlogan} >
                     <TextInput ref={inputDescriptionRef} placeholder='Describe what your company do' />
                     <Button disabled={isLoading} type='submit' className="btn-submit">
                         {isLoading ? <DotLoading /> : 'SEARCH'}

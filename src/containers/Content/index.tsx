@@ -18,7 +18,7 @@ function ContentPage() {
     const [isLoading, setIsLoading] = useState(false)
     const [text, setText] = useState('')
 
-    async function handleFetchEmojis(event: FormEvent<HTMLFormElement>) {
+    async function handleFetchContent(event: FormEvent<HTMLFormElement>) {
         event.preventDefault()
         setIsLoading(true)
 
@@ -46,7 +46,7 @@ function ContentPage() {
                     description='Post content creation'
                 />
 
-                <S.FormGroup onSubmit={handleFetchEmojis} >
+                <S.FormGroup onSubmit={handleFetchContent} >
                     <TextInput ref={inputDescriptionRef} placeholder='Type something' />
                     <Button disabled={isLoading} type='submit' className="btn-submit">
                         {isLoading ? <DotLoading /> : 'SEARCH'}

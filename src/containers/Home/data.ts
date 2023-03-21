@@ -44,9 +44,9 @@ export const apps = [
     {
         title: 'Keywords',
         description: 'assaddsd',
-        url: '/hashtags',
+        url: '/keywords',
         icon: '🆒',
-        isActive: false
+        isActive: true
     },
     {
         title: 'Speech to Text',
