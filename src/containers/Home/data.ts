@@ -30,9 +30,9 @@ export const apps = [
     {
         title: 'Content',
         description: 'assaddsd',
-        url: '/hashtags',
+        url: '/content',
         icon: '📝',
-        isActive: false
+        isActive: true
     },
     {
         title: 'Emojis',
