@@ -53,6 +53,6 @@ export const apps = [
         description: 'Transform your spoken words into polished text with our advanced speech-to-text app that enhances your message.',
         url: '/speech-to-text',
         icon: '💬',
-        isActive: false
+        isActive: true
     },
 ]

@@ -1,3 +1,5 @@
+import 'regenerator-runtime/runtime'
+
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import { Toaster } from 'react-hot-toast'
