@@ -10,7 +10,11 @@ function PageHeader({ title, description }: PageHeaderProps) {
     return (
         <>
             <Head>
+                <meta property="og:title" content={`${title} | PowerMedia: More than an app, an ally for your business.`} />
+                <meta property="og:type" content="website" />
+                <meta property="og:description" content={description} />
                 <meta name="description" content={description} />
+
                 <title>{title} | PowerMedia: More than an app, an ally for your business.</title>
             </Head>
 

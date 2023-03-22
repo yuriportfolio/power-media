@@ -9,7 +9,7 @@ function HomePage() {
             <S.Wrapper>
                 <S.Container>
                     <PageHeader
-                        title='Boost your digital content'
+                        title='Boost your digital content 📑'
                         description='Streamline your social media content creation with our all-in-one app.'
                     />
 
