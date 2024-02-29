@@ -2,7 +2,7 @@ repo_name: yuriportfolio/power-media
 report_id: a18dd0de129f0bd56ed9dd19cafea3ee
 version: 0.1
 repo_type: Public
-timestamp: '2024-01-05T09:07:18+00:00'
+timestamp: '2024-02-29T18:22:25+00:00'
 requested_by: trindadematheus
 provider: github
 branch: main
@@ -31,7 +31,7 @@ tools:
   detection_source_url: https://github.com/yuriportfolio/power-media
   detection_source: Repo Metadata
 - name: Next.js
-  description: 'A small framework for server-rendered universal JavaScript apps '
+  description: A small framework for server-rendered universal JavaScript apps
   website_url: https://nextjs.org/
   version: 13.2.4
   open_source: true
